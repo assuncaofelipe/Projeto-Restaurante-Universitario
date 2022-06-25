@@ -27,11 +27,14 @@
         <item name="android:windowBackground">@color/white</item>
         <item name="android:statusBarColor" tools:targetAPI="l">?attr/colorPrimaryVariant</item>
     </style>
+
     <style name="Theme.MeuRU.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="Theme.MeuRU.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.MeuRU.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
