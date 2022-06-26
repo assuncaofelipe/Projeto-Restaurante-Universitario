@@ -6,13 +6,27 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Universidade Federal do Amazonas</string>
-    <string name="nav_header_subtitle">Instituto de Ciências Exatas e Tecnologia</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Sair</string>
+    <string name="opcao_sair">Sair</string>
 
     <string name="menu_home">Início</string>
     <string name="menu_cardapio">Cardápio</string>
     <string name="menu_declaracao_ru">Declaração RU</string>
     <string name="menu_sobre">Sobre</string>
+    <string name="mostrar_senha">Mostrar Senha</string>
+    <string name="login">Entrar</string>
+    <string name="senha">Senha</string>
+    <string name="email">E-mail</string>
+    <string name="txt_boasvindas_login">Login</string>
+    
+    <string-array name="refeicao">
+        <item>Desjejum</item>
+        <item>Almoço</item>
+        <item>Jantar</item>
+        <item>Quantidade</item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+    
 </resources>

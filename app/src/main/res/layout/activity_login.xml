@@ -7,11 +7,11 @@
     tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Login"
+        android:text="@string/txt_boasvindas_login"
         android:textColor="@color/cor_verde"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +21,7 @@
 
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/edit_email"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -31,14 +31,10 @@
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_ic_school"
         android:drawablePadding="12dp"
-
         android:ems="10"
-        android:hint="CPF"
-        android:inputType="number"
-        android:maxLength="11"
-
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
         android:minHeight="48dp"
-
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
         android:textColor="@color/black"
@@ -47,11 +43,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/edit_senha"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -62,7 +57,7 @@
         android:drawableStart="@drawable/custom_key"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Senha"
+        android:hint="@string/senha"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:paddingStart="12dp"
@@ -72,19 +67,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+    <CheckBox
+        android:id="@+id/ckb_mostrar_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:buttonTint="@color/cor_verde"
+        android:text="@string/mostrar_senha"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_button"
-        android:text="Entrar"
+        android:text="@string/login"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/ckb_mostrar_senha" />
 
+
+<!--
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+     -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

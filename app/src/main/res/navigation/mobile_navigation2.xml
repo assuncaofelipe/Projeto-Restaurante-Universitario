@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_cardapio"
         android:name="com.icet.restaurante.ui.cardapio.CardapioFragment"
         android:label="@string/menu_cardapio"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_cardapio" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_declarao_ru"
         android:name="com.icet.restaurante.ui.declaracao_ru.DeclaracaoRU_Fragment"
         android:label="@string/menu_declaracao_ru"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_declarao_ru" />
 </navigation>

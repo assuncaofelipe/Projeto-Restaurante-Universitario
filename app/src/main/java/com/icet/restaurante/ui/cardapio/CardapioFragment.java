@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.icet.restaurante.databinding.FragmentGalleryBinding;
+import com.icet.restaurante.databinding.FragmentCardapioBinding;
 
 public class CardapioFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentCardapioBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         CardapioViewModel galleryViewModel =
                 new ViewModelProvider(this).get(CardapioViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentCardapioBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
+        final TextView textView = binding.textCardapio;
         galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
