@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
                                 abrirTelaHome();
                             } else {
                                 String error = task.getException().getMessage();
-                                Toast.makeText(LoginActivity.this, ""+error, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "" +error , Toast.LENGTH_SHORT).show();
                                 // loginProgressBar.setVisibility(View.INVISIBLE);
                             }
                         }
@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void abrirTelaHome() {
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
         startActivity(intent);
         finish();
     }
