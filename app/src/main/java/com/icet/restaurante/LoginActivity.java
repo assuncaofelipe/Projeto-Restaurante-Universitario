@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private CheckBox ckc_mostrar_senha;
     private Button btn_login;
-    private ProgressBar loginProgressBar;
+   // private ProgressBar loginProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
