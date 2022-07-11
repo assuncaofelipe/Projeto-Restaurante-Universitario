@@ -1,6 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-
     <!-- Tema padrão da aplicação -->
     <style name="Theme.MeuRU" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
