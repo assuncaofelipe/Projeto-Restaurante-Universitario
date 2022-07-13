@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/verde_primary</item>
         <item name="colorPrimaryVariant">@color/verde_primary</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="titleTextColor">@color/actionBarTitle</item>
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetAPI="l">?attr/colorPrimaryVariant</item>

@@ -14,4 +14,7 @@
     <color name="verde_status_bar">#009837</color>
     <!-- verde do picpay -->
     <color name="cor_verde">#11C770</color>
+    <!-- color title toolbar -->
+    <color name="actionBarTitle">@color/white</color>
+
 </resources>
